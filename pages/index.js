@@ -6,7 +6,6 @@ import deved from '../public/dev-ed-wave.png';
 import service1 from '../public/wp-logo.png';
 import service2 from '../public/react-logo.png';
 import service3 from '../public/net-logo.png';
-import consulting from '../public/consulting.png';
 import web1 from '../public/web1.png';
 import web2 from '../public/web2.png';
 import web3 from '../public/web3.png';
@@ -18,7 +17,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 
 export default function Home() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(false);  
   return (
     <div className={darkMode ? "dark" : ""}>
       <Head>
@@ -33,10 +32,7 @@ export default function Home() {
           <Link href="localhost:3000"><Image src={logo} width={80} height={80} /></Link>
             <ul className='flex items-center'>
               <li>
-                <BsFillMoonFill onClick={() => setDarkMode(!darkMode)} className='cursor-pointer text-2xl dark:text-white' />
-              </li>
-              <li>
-                <a className=' bg-gradient-to-r from-indigo-800 via-red-500 to-yellow-500 text-white px-4 py-2 rounded-md ml-8' href='#'>Resume</a>
+                <a className=' bg-gradient-to-r from-indigo-800 via-red-500 to-yellow-500 text-white px-5 py-3 rounded-md ml-8' href='#'>Resume</a>
                 </li>
             </ul>
           </nav>
@@ -123,8 +119,8 @@ export default function Home() {
           </div>
         </section>
 
-
-
+        <button onClick={() => setDarkMode(!darkMode)} title="Contact Sale"
+        class="fixed z-90 bottom-10 right-8 bg-red-500 w-20 h-20 rounded-full drop-shadow-lg flex justify-center items-center text-white text-4xl hover:bg-yellow-500 hover:drop-shadow-2xl "><BsFillMoonFill /></button>
 
       </main>
 
