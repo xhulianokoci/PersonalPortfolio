@@ -3,8 +3,9 @@ import {BsFillMoonFill} from 'react-icons/bs';
 import {AiFillGithub, AiFillLinkedin, AiFillSkype,} from "react-icons/ai";
 import Image from 'next/image';
 import deved from '../public/dev-ed-wave.png';
-import design from '../public/Wordpress-Logo.png';
-import code from '../public/code.png';
+import service1 from '../public/wp-logo.png';
+import service2 from '../public/react-logo.png';
+import service3 from '../public/net-logo.png';
 import consulting from '../public/consulting.png';
 import web1 from '../public/web1.png';
 import web2 from '../public/web2.png';
@@ -72,7 +73,7 @@ export default function Home() {
 
           <div className='lg:flex gap-10'>
             <div className='text-center shadow-lg p-10 rounded-xl my-10'>
-              <Image src={design} width={100} height={100} className='mx-auto'/>
+              <Image src={service1} width={100} height={100} className='mx-auto'/>
               <h3 className='text-lg font-medium pt-8 pb-2 text-transparent bg-clip-text bg-gradient-to-r from-indigo-800 via-red-500 to-yellow-500 dark:text-white'>Wordpress Developer</h3>
               <p className='py-2 dark:text-white'>Creating elegant website designs suited for your needs following your design theory.</p>
               <h4 className='py-4 text-teal-600'>Technologies and tools that I use</h4>
@@ -81,7 +82,7 @@ export default function Home() {
             </div>
 
             <div className='text-center shadow-lg p-10 rounded-xl my-10'>
-            <Image src={design} width={100} height={100} className='mx-auto'/>
+            <Image src={service2} width={100} height={100} className='mx-auto'/>
               <h3 className='text-lg font-medium pt-8 pb-2 text-indigo-800 dark:text-white'>Front-End Developer</h3>
               <p className='py-2 dark:text-white'>Creating elegant website designs suited for your needs following your design theory.</p>
               <h4 className='py-4 text-teal-600'>Technologies that I use</h4>
@@ -90,7 +91,7 @@ export default function Home() {
             </div>
 
             <div className='text-center shadow-lg p-10 rounded-xl my-10'>
-              <Image src={consulting} width={100} height={100} className='mx-auto'/>
+              <Image src={service3} width={100} height={100} className='mx-auto'/>
               <h3 className='text-lg font-medium pt-8 pb-2 text-indigo-800 dark:text-white'>Back-End Developer</h3>
               <p className='py-2 dark:text-white'>Creating elegant website designs suited for your needs following your design theory.</p>
               <h4 className='py-4 text-teal-600'>Technologies that I use</h4>
