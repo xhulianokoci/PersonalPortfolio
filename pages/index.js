@@ -36,7 +36,7 @@ export default function Home() {
                 <BsFillMoonFill onClick={() => setDarkMode(!darkMode)} className='cursor-pointer text-2xl dark:text-white' />
               </li>
               <li>
-                <a className='bg-gradient-to-r from-indigo-800 via-red-500 to-yellow-500 text-white px-4 py-2 rounded-md ml-8' href='#'>Resume</a>
+                <a className=' bg-gradient-to-r from-indigo-800 via-red-500 to-yellow-500 text-white px-4 py-2 rounded-md ml-8' href='#'>Resume</a>
                 </li>
             </ul>
           </nav>
@@ -71,8 +71,8 @@ export default function Home() {
             </p>
           </div>
 
-          <div className='lg:flex gap-10'>
-            <div className='text-center shadow-lg p-10 rounded-xl my-10'>
+          <div className='lg:flex gap-10 '>
+            <div className='text-center shadow-xl p-10 rounded-xl my-10 transform transition-all hover:scale-105 hover:shadow-2xl'>
               <Image src={service1} width={100} height={100} className='mx-auto'/>
               <h3 className='text-lg font-medium pt-8 pb-2 text-transparent bg-clip-text bg-gradient-to-r from-indigo-800 via-red-500 to-yellow-500 dark:text-white'>Wordpress Developer</h3>
               <p className='py-2 dark:text-white'>Creating elegant website designs suited for your needs following your design theory.</p>
@@ -81,18 +81,18 @@ export default function Home() {
               <p className='text-gray-800 py-1 dark:text-white'>Responsive Design | Optimizaion | Basic SEO | Back-Ups | Migrations</p>
             </div>
 
-            <div className='text-center shadow-lg p-10 rounded-xl my-10'>
+            <div className='text-center shadow-lg p-10 rounded-xl my-10 transform transition-all hover:scale-105 hover:shadow-2xl'>
             <Image src={service2} width={100} height={100} className='mx-auto'/>
-              <h3 className='text-lg font-medium pt-8 pb-2 text-indigo-800 dark:text-white'>Front-End Developer</h3>
+              <h3 className='text-lg font-medium pt-8 pb-2 text-transparent bg-clip-text bg-gradient-to-r from-indigo-800 via-red-500 to-yellow-500 dark:text-white'>Front-End Developer</h3>
               <p className='py-2 dark:text-white'>Creating elegant website designs suited for your needs following your design theory.</p>
               <h4 className='py-4 text-teal-600'>Technologies that I use</h4>
               <p className='text-gray-800 py-1 dark:text-white'>HTML5 | CSS3 | Bootstrap | Tailwind </p>
               <p className='text-gray-800 py-1 dark:text-white'>Sass | React | NextJS | ThreeJS</p>
             </div>
 
-            <div className='text-center shadow-lg p-10 rounded-xl my-10'>
+            <div className='text-center shadow-lg p-10 rounded-xl my-10 transform transition-all hover:scale-105 hover:shadow-2xl'>
               <Image src={service3} width={100} height={100} className='mx-auto'/>
-              <h3 className='text-lg font-medium pt-8 pb-2 text-indigo-800 dark:text-white'>Back-End Developer</h3>
+              <h3 className='text-lg font-medium pt-8 pb-2 text-transparent bg-clip-text bg-gradient-to-r from-indigo-800 via-red-500 to-yellow-500 dark:text-white'>Back-End Developer</h3>
               <p className='py-2 dark:text-white'>Creating elegant website designs suited for your needs following your design theory.</p>
               <h4 className='py-4 text-teal-600'>Technologies that I use</h4>
               <p className='text-gray-800 py-1 dark:text-white'>HTML5 | CSS3 | Bootstrap | Tailwind </p>
@@ -105,7 +105,7 @@ export default function Home() {
           <div className='text-center p-10'>
             <h3 className='text-3xl py-1 dark:font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-800 via-red-500 to-yellow-500'>Portofolio</h3>
             <p className='text-medium py-5 leading-8 md:text-xl text-gray-800 max-w-6xl mx-auto dark:text-white'>
-              Since the beginning of my journey as a freelancer designer and developer, I've done remote work for <span className='text-teal-500'>agencies</span> 
+              Since the beginning of my journey as a freelancer designer and developer, I've done remote work for <span className='text-teal-500'>agencies </span> 
               consulted for <span className='text-teal-500'>startups</span> and collaborated with talended people to create digital products for both business and customer use.
             </p>
             <p className='text-medium py-5 leading-8 md:text-xl text-gray-800 max-w-6xl mx-auto dark:text-white'>
@@ -114,14 +114,18 @@ export default function Home() {
           </div>
 
           <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
-            <div className='basis-1/3 flex-1'><Image src={web1} className='rounded-lg object-cover' width={'100%'} height={'100%'}/></div>
-            <div className='basis-1/3 flex-1'><Image src={web2} className='rounded-lg object-cover' width={'100%'} height={'100%'}/></div>
-            <div className='basis-1/3 flex-1'><Image src={web3} className='rounded-lg object-cover' width={'100%'} height={'100%'}/></div>
-            <div className='basis-1/3 flex-1'><Image src={web4} className='rounded-lg object-cover' width={'100%'} height={'100%'}/></div>
-            <div className='basis-1/3 flex-1'><Image src={web5} className='rounded-lg object-cover' width={'100%'} height={'100%'}/></div>
-            <div className='basis-1/3 flex-1'><Image src={web6} className='rounded-lg object-cover' width={'100%'} height={'100%'}/></div>
+            <div className='basis-1/3 flex-1 transform transition-all hover:scale-105'><Image src={web1} className='rounded-lg object-cover' width={'100%'} height={'100%'}/></div>
+            <div className='basis-1/3 flex-1 transform transition-all hover:scale-105'><Image src={web2} className='rounded-lg object-cover' width={'100%'} height={'100%'}/></div>
+            <div className='basis-1/3 flex-1 transform transition-all hover:scale-105'><Image src={web3} className='rounded-lg object-cover' width={'100%'} height={'100%'}/></div>
+            <div className='basis-1/3 flex-1 transform transition-all hover:scale-105'><Image src={web4} className='rounded-lg object-cover' width={'100%'} height={'100%'}/></div>
+            <div className='basis-1/3 flex-1 transform transition-all hover:scale-105'><Image src={web5} className='rounded-lg object-cover' width={'100%'} height={'100%'}/></div>
+            <div className='basis-1/3 flex-1 transform transition-all hover:scale-105'><Image src={web6} className='rounded-lg object-cover' width={'100%'} height={'100%'}/></div>
           </div>
         </section>
+
+
+
+
       </main>
 
 
