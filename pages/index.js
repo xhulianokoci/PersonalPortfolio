@@ -29,7 +29,7 @@ export default function Home() {
       <main className='bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900'>
         <section className='min-h-screen'>
           <nav className='backdrop-filter backdrop-blur-sm bg-opacity-70 py-3 px-10 mb-3 flex justify-between bg-white fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-800 dark:backdrop-filter dar:backdrop-blur-sm dark:bg-opacity-70 dark:bg-gray-900'>
-          <Link href="localhost:3000"><Image src={logo} width={80} height={80} /></Link>          
+          <Link href="http://localhost:3000/"><Image src={logo} width={80} height={80} alt="XK Logo"/></Link>          
             <ul className='flex items-center'>
               <li>
                 <a className=' bg-gradient-to-r from-indigo-800 via-red-500 to-yellow-500 text-white px-5 py-3 rounded-md ml-8' href='#'>Resume</a>
@@ -44,13 +44,13 @@ export default function Home() {
             <p className='text-medium py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto dark:text-white'>Freelancer providing services for programming and design content needs. Join me down below and let's get cracking!</p>
           </div>
           <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600'>
-            <a href="https://github.com/xhulianokoci" class="flex items-center mb-4 sm:mb-0 transform transition-all hover:scale-125 hover:shadow-2xl"><AiFillGithub /> </a>
-            <a href="https://www.linkedin.com/in/xhuliano-koci/" class="flex items-center mb-4 sm:mb-0 transform transition-all hover:scale-125 hover:shadow-2xl"><AiFillLinkedin /></a>
-            <a href="https://join.skype.com/invite/eTsIUYg2Ap2g" class="flex items-center mb-4 sm:mb-0 transform transition-all hover:scale-125 hover:shadow-2xl"><AiFillSkype /></a>
+            <a href="https://github.com/xhulianokoci" className="flex items-center mb-4 sm:mb-0 transform transition-all hover:scale-125 hover:shadow-2xl"><AiFillGithub /> </a>
+            <a href="https://www.linkedin.com/in/xhuliano-koci/" className="flex items-center mb-4 sm:mb-0 transform transition-all hover:scale-125 hover:shadow-2xl"><AiFillLinkedin /></a>
+            <a href="https://join.skype.com/invite/eTsIUYg2Ap2g" className="flex items-center mb-4 sm:mb-0 transform transition-all hover:scale-125 hover:shadow-2xl"><AiFillSkype /></a>
           </div>
 
           <div className='relative mx-auto bg-gradient-to-b from-yellow-500 via-red-500 to-indigo-950  rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96'>
-            <Image src={deved} layout="fill" objectFit='cover'/>
+            <Image src={deved} layout="fill" objectFit='cover' alt='my profile picture'/>
           </div>
         </section>
 
@@ -69,7 +69,7 @@ export default function Home() {
 
           <div className='lg:flex gap-10 '>
             <div className='text-center shadow-xl p-10 rounded-xl my-10 transform transition-all hover:scale-105 hover:shadow-2xl'>
-              <Image src={service1} width={100} height={100} className='mx-auto'/>
+              <Image src={service1} width={100} height={100} className='mx-auto' alt='wordpress logo'/>
               <h3 className='text-lg font-medium pt-8 pb-2 text-transparent bg-clip-text bg-gradient-to-r from-indigo-800 via-red-500 to-yellow-500 dark:text-white'>Wordpress Developer</h3>
               <p className='py-2 dark:text-white'>Creating elegant website designs suited for your needs following your design theory.</p>
               <h4 className='py-4 text-transparent bg-clip-text bg-gradient-to-r from-indigo-800 via-red-500 to-yellow-500 '>Technologies and tools that I use</h4>
@@ -78,7 +78,7 @@ export default function Home() {
             </div>
 
             <div className='text-center shadow-lg p-10 rounded-xl my-10 transform transition-all hover:scale-105 hover:shadow-2xl'>
-            <Image src={service2} width={100} height={100} className='mx-auto'/>
+            <Image src={service2} width={100} height={100} className='mx-auto' alt='react logo'/>
               <h3 className='text-lg font-medium pt-8 pb-2 text-transparent bg-clip-text bg-gradient-to-r from-indigo-800 via-red-500 to-yellow-500 dark:text-white'>Front-End Developer</h3>
               <p className='py-2 dark:text-white'>Creating elegant website designs suited for your needs following your design theory.</p>
               <h4 className='py-4 text-transparent bg-clip-text bg-gradient-to-r from-indigo-800 via-red-500 to-yellow-500 '>Technologies that I use</h4>
@@ -87,7 +87,7 @@ export default function Home() {
             </div>
 
             <div className='text-center shadow-lg p-10 rounded-xl my-10 transform transition-all hover:scale-105 hover:shadow-2xl'>
-              <Image src={service3} width={100} height={100} className='mx-auto'/>
+              <Image src={service3} width={100} height={100} className='mx-auto' alt='dotnet logo'/>
               <h3 className='text-lg font-medium pt-8 pb-2 text-transparent bg-clip-text bg-gradient-to-r from-indigo-800 via-red-500 to-yellow-500 dark:text-white'>Back-End Developer</h3>
               <p className='py-2 dark:text-white'>Creating elegant website designs suited for your needs following your design theory.</p>
               <h4 className='py-4 text-transparent bg-clip-text bg-gradient-to-r from-indigo-800 via-red-500 to-yellow-500 '>Technologies that I use</h4>
@@ -110,68 +110,68 @@ export default function Home() {
           </div>
 
           <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
-            <div className='basis-1/3 flex-1 transform transition-all hover:scale-105'><Image src={web1} className='rounded-lg object-cover' width={'100%'} height={'100%'}/></div>
-            <div className='basis-1/3 flex-1 transform transition-all hover:scale-105'><Image src={web2} className='rounded-lg object-cover' width={'100%'} height={'100%'}/></div>
-            <div className='basis-1/3 flex-1 transform transition-all hover:scale-105'><Image src={web3} className='rounded-lg object-cover' width={'100%'} height={'100%'}/></div>
-            <div className='basis-1/3 flex-1 transform transition-all hover:scale-105'><Image src={web4} className='rounded-lg object-cover' width={'100%'} height={'100%'}/></div>
-            <div className='basis-1/3 flex-1 transform transition-all hover:scale-105'><Image src={web5} className='rounded-lg object-cover' width={'100%'} height={'100%'}/></div>
-            <div className='basis-1/3 flex-1 transform transition-all hover:scale-105'><Image src={web6} className='rounded-lg object-cover' width={'100%'} height={'100%'}/></div>
+            <div className='basis-1/3 flex-1 transform transition-all hover:scale-105'><Image src={web1} className='rounded-lg object-cover' width={'100%'} height={'100%'} alt='portfolio image'/></div>
+            <div className='basis-1/3 flex-1 transform transition-all hover:scale-105'><Image src={web2} className='rounded-lg object-cover' width={'100%'} height={'100%'} alt='portfolio image'/></div>
+            <div className='basis-1/3 flex-1 transform transition-all hover:scale-105'><Image src={web3} className='rounded-lg object-cover' width={'100%'} height={'100%'} alt='portfolio image'/></div>
+            <div className='basis-1/3 flex-1 transform transition-all hover:scale-105'><Image src={web4} className='rounded-lg object-cover' width={'100%'} height={'100%'} alt='portfolio image'/></div>
+            <div className='basis-1/3 flex-1 transform transition-all hover:scale-105'><Image src={web5} className='rounded-lg object-cover' width={'100%'} height={'100%'} alt='portfolio image'/></div>
+            <div className='basis-1/3 flex-1 transform transition-all hover:scale-105'><Image src={web6} className='rounded-lg object-cover' width={'100%'} height={'100%'} alt='portfolio image'/></div>
           </div>
         </section>
 
 
-        <section class="bg-white dark:bg-gray-900 py-10">
-          <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contact Me</h2>
-            <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Got a technical issue? Want to send feedback about a beta feature? Need details about our Business plan? Let us know.</p>
-            <form action="#" class="space-y-8">
+        <section className="bg-white dark:bg-gray-900 py-10">
+          <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+            <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contact Me</h2>
+            <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Got a technical issue? Want to send feedback about a beta feature? Need details about our Business plan? Let us know.</p>
+            <form action="#" className="space-y-8">
               <div>
-                <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
-                <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="name@gmail.com" required />
+                <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
+                <input type="email" id="email" className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="name@gmail.com" required />
               </div>
               <div>
-                <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Subject</label>
-                <input type="text" id="subject" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Let us know how can I help you" required />
+                <label htmlFor="subject" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Subject</label>
+                <input type="text" id="subject" className="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Let us know how can I help you" required />
               </div>
-              <div class="sm:col-span-2">
-                <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
-                <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a comment..."></textarea>
+              <div className="sm:col-span-2">
+                <label htmlFor="message" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
+                <textarea id="message" rows="6" className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a comment..."></textarea>
               </div>
-              <button type="submit" class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-red-500 sm:w-fit hover:bg-indigo-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send message</button>
+              <button type="submit" className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-red-500 sm:w-fit hover:bg-indigo-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send message</button>
             </form>
           </div>
         </section>
 
         <button onClick={() => setDarkMode(!darkMode)} title="Contact Sale"
-        class="fixed z-90 bottom-10 right-8 backdrop-filter backdrop-blur-sm bg-opacity-80 bg-red-500 w-16 h-16 rounded-full drop-shadow-lg flex justify-center items-center text-white text-2xl hover:bg-yellow-500 hover:drop-shadow-2xl dark:backdrop-filter dark:backdrop-blur-sm dark:bg-opacity-80 "><BsFillSunFill /></button>
+        className="fixed z-90 bottom-10 right-8 backdrop-filter backdrop-blur-sm bg-opacity-80 bg-red-500 w-16 h-16 rounded-full drop-shadow-lg flex justify-center items-center text-white text-2xl hover:bg-yellow-500 hover:drop-shadow-2xl dark:backdrop-filter dark:backdrop-blur-sm dark:bg-opacity-80 "><BsFillSunFill /></button>
 
       </main>
 
 
-      <footer class="bg-white dark:bg-gray-900">
-        <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
-          <div class="sm:flex sm:items-center sm:justify-between">
-            <a href="localhost:3000" class="flex items-center mb-4 sm:mb-0">
-              <Image src={logo} width={40} height={40} class="h-8 mr-3" alt="Xhuliano Koci Logo" />
-              <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Xhuliano Koci</span>
+      <footer className="bg-white dark:bg-gray-900">
+        <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+          <div className="sm:flex sm:items-center sm:justify-between">
+            <a href="http://localhost:3000/" className="flex items-center mb-4 sm:mb-0">
+              <Image src={logo} width={40} height={40} className="h-8 mr-3" alt="XK Logo" />
+              <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Xhuliano Koci</span>
             </a>
-            <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+            <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
               <li>
-                <a href="#" class="mr-4 hover:underline md:mr-6 ">About</a>
+                <a href="#" className="mr-4 hover:underline md:mr-6 ">About</a>
               </li>
               <li>
-                <a href="#" class="mr-4 hover:underline md:mr-6">Privacy Policy</a>
+                <a href="#" className="mr-4 hover:underline md:mr-6">Privacy Policy</a>
               </li>
               <li>
-                <a href="#" class="mr-4 hover:underline md:mr-6 ">Licensing</a>
+                <a href="#" className="mr-4 hover:underline md:mr-6 ">Licensing</a>
               </li>
               <li>
-                <a href="#" class="hover:underline">Contact</a>
+                <a href="#" className="hover:underline">Contact</a>
               </li>
             </ul>
           </div>
-          <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-          <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="#" class="hover:underline">Xhuliano Koci</a></span>
+          <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+          <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="http://localhost:3000/" className="hover:underline">Xhuliano Koci</a></span>
         </div>
       </footer>
     </div>
