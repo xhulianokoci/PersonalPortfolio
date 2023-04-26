@@ -29,7 +29,7 @@ export default function Home() {
 
       <main className='bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900'>
         <section className='min-h-screen'>
-          <nav className='py-10 mb-12 flex justify-between'>
+          <nav className='backdrop-filter backdrop-blur-sm bg-opacity-70 py-3 px-10 mb-3 flex justify-between bg-white fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-800 dark:backdrop-filter dar:backdrop-blur-sm dark:bg-opacity-70 dark:bg-gray-900'>
           <Link href="localhost:3000"><Image src={logo} width={80} height={80} /></Link>
             <ul className='flex items-center'>
               <li>
@@ -41,7 +41,7 @@ export default function Home() {
             </ul>
           </nav>
 
-          <div className='text-center p-10'>
+          <div className='text-center pt-48 p-10 '>
           <h3 className='text-2xl py-2 md:text-3xl dark:text-white'>Hey, I'm</h3>
             <h2 className='sm:text-8xl md:text-6xl lg:text-8xl py-2 font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-800 via-red-500 to-yellow-500 '>Xhuliano Koci</h2>
             <h3 className='text-2xl py-2 md:text-3xl dark:text-white'>Developer and Designer.</h3>
