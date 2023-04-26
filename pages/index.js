@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import {BsFillMoonFill} from 'react-icons/bs';
+import {BsFillSunFill} from 'react-icons/bs';
 import {AiFillGithub, AiFillLinkedin, AiFillSkype,} from "react-icons/ai";
 import Image from 'next/image';
 import deved from '../public/dev-ed-wave.png';
@@ -29,7 +29,7 @@ export default function Home() {
       <main className='bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900'>
         <section className='min-h-screen'>
           <nav className='backdrop-filter backdrop-blur-sm bg-opacity-70 py-3 px-10 mb-3 flex justify-between bg-white fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-800 dark:backdrop-filter dar:backdrop-blur-sm dark:bg-opacity-70 dark:bg-gray-900'>
-          <Link href="localhost:3000"><Image src={logo} width={80} height={80} /></Link>
+          <Link href="localhost:3000"><Image src={logo} width={80} height={80} /></Link>          
             <ul className='flex items-center'>
               <li>
                 <a className=' bg-gradient-to-r from-indigo-800 via-red-500 to-yellow-500 text-white px-5 py-3 rounded-md ml-8' href='#'>Resume</a>
@@ -39,14 +39,14 @@ export default function Home() {
 
           <div className='text-center pt-48 p-10 '>
           <h3 className='text-2xl py-2 md:text-3xl dark:text-white'>Hey, I'm</h3>
-            <h2 className='sm:text-8xl md:text-6xl lg:text-8xl py-2 font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-800 via-red-500 to-yellow-500 '>Xhuliano Koci</h2>
+            <h2 className='text-4xl lg:text-8xl py-2 font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-800 via-red-500 to-yellow-500 '>Xhuliano Koci</h2>
             <h3 className='text-2xl py-2 md:text-3xl dark:text-white'>Developer and Designer.</h3>
             <p className='text-medium py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto dark:text-white'>Freelancer providing services for programming and design content needs. Join me down below and let's get cracking!</p>
           </div>
           <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600'>
-            <a href="https://github.com/xhulianokoci" class="flex items-center mb-4 sm:mb-0"><AiFillGithub /> </a>
-            <a href="https://www.linkedin.com/in/xhuliano-koci/" class="flex items-center mb-4 sm:mb-0"><AiFillLinkedin /></a>
-            <a href="https://join.skype.com/invite/eTsIUYg2Ap2g" class="flex items-center mb-4 sm:mb-0"><AiFillSkype /></a>
+            <a href="https://github.com/xhulianokoci" class="flex items-center mb-4 sm:mb-0 transform transition-all hover:scale-125 hover:shadow-2xl"><AiFillGithub /> </a>
+            <a href="https://www.linkedin.com/in/xhuliano-koci/" class="flex items-center mb-4 sm:mb-0 transform transition-all hover:scale-125 hover:shadow-2xl"><AiFillLinkedin /></a>
+            <a href="https://join.skype.com/invite/eTsIUYg2Ap2g" class="flex items-center mb-4 sm:mb-0 transform transition-all hover:scale-125 hover:shadow-2xl"><AiFillSkype /></a>
           </div>
 
           <div className='relative mx-auto bg-gradient-to-b from-yellow-500 via-red-500 to-indigo-950  rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96'>
@@ -72,7 +72,7 @@ export default function Home() {
               <Image src={service1} width={100} height={100} className='mx-auto'/>
               <h3 className='text-lg font-medium pt-8 pb-2 text-transparent bg-clip-text bg-gradient-to-r from-indigo-800 via-red-500 to-yellow-500 dark:text-white'>Wordpress Developer</h3>
               <p className='py-2 dark:text-white'>Creating elegant website designs suited for your needs following your design theory.</p>
-              <h4 className='py-4 text-teal-600'>Technologies and tools that I use</h4>
+              <h4 className='py-4 text-transparent bg-clip-text bg-gradient-to-r from-indigo-800 via-red-500 to-yellow-500 '>Technologies and tools that I use</h4>
               <p className='text-gray-800 py-1 dark:text-white'>Photoshop | Illustrator | Figma | Wordpress | Elementor</p>
               <p className='text-gray-800 py-1 dark:text-white'>Responsive Design | Optimizaion | Basic SEO | Back-Ups | Migrations</p>
             </div>
@@ -81,7 +81,7 @@ export default function Home() {
             <Image src={service2} width={100} height={100} className='mx-auto'/>
               <h3 className='text-lg font-medium pt-8 pb-2 text-transparent bg-clip-text bg-gradient-to-r from-indigo-800 via-red-500 to-yellow-500 dark:text-white'>Front-End Developer</h3>
               <p className='py-2 dark:text-white'>Creating elegant website designs suited for your needs following your design theory.</p>
-              <h4 className='py-4 text-teal-600'>Technologies that I use</h4>
+              <h4 className='py-4 text-transparent bg-clip-text bg-gradient-to-r from-indigo-800 via-red-500 to-yellow-500 '>Technologies that I use</h4>
               <p className='text-gray-800 py-1 dark:text-white'>HTML5 | CSS3 | Bootstrap | Tailwind </p>
               <p className='text-gray-800 py-1 dark:text-white'>Sass | React | NextJS | ThreeJS</p>
             </div>
@@ -90,9 +90,9 @@ export default function Home() {
               <Image src={service3} width={100} height={100} className='mx-auto'/>
               <h3 className='text-lg font-medium pt-8 pb-2 text-transparent bg-clip-text bg-gradient-to-r from-indigo-800 via-red-500 to-yellow-500 dark:text-white'>Back-End Developer</h3>
               <p className='py-2 dark:text-white'>Creating elegant website designs suited for your needs following your design theory.</p>
-              <h4 className='py-4 text-teal-600'>Technologies that I use</h4>
-              <p className='text-gray-800 py-1 dark:text-white'>HTML5 | CSS3 | Bootstrap | Tailwind </p>
-              <p className='text-gray-800 py-1 dark:text-white'>Sass | React | NextJS | ThreeJS</p>
+              <h4 className='py-4 text-transparent bg-clip-text bg-gradient-to-r from-indigo-800 via-red-500 to-yellow-500 '>Technologies that I use</h4>
+              <p className='text-gray-800 py-1 dark:text-white'>C# | .NET | .NET Core | ASP.NET </p>
+              <p className='text-gray-800 py-1 dark:text-white'>MySQL | Hangfire | ClosedXML | SignalR </p>
             </div>
           </div>
         </section>
@@ -119,8 +119,31 @@ export default function Home() {
           </div>
         </section>
 
+
+        <section class="bg-white dark:bg-gray-900 py-10">
+          <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contact Me</h2>
+            <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Got a technical issue? Want to send feedback about a beta feature? Need details about our Business plan? Let us know.</p>
+            <form action="#" class="space-y-8">
+              <div>
+                <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
+                <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="name@gmail.com" required />
+              </div>
+              <div>
+                <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Subject</label>
+                <input type="text" id="subject" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Let us know how can I help you" required />
+              </div>
+              <div class="sm:col-span-2">
+                <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
+                <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a comment..."></textarea>
+              </div>
+              <button type="submit" class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-red-500 sm:w-fit hover:bg-indigo-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send message</button>
+            </form>
+          </div>
+        </section>
+
         <button onClick={() => setDarkMode(!darkMode)} title="Contact Sale"
-        class="fixed z-90 bottom-10 right-8 bg-red-500 w-20 h-20 rounded-full drop-shadow-lg flex justify-center items-center text-white text-4xl hover:bg-yellow-500 hover:drop-shadow-2xl "><BsFillMoonFill /></button>
+        class="fixed z-90 bottom-10 right-8 backdrop-filter backdrop-blur-sm bg-opacity-80 bg-red-500 w-16 h-16 rounded-full drop-shadow-lg flex justify-center items-center text-white text-2xl hover:bg-yellow-500 hover:drop-shadow-2xl dark:backdrop-filter dark:backdrop-blur-sm dark:bg-opacity-80 "><BsFillSunFill /></button>
 
       </main>
 
@@ -128,7 +151,7 @@ export default function Home() {
       <footer class="bg-white dark:bg-gray-900">
         <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
           <div class="sm:flex sm:items-center sm:justify-between">
-            <a href="https://flowbite.com/" class="flex items-center mb-4 sm:mb-0">
+            <a href="localhost:3000" class="flex items-center mb-4 sm:mb-0">
               <Image src={logo} width={40} height={40} class="h-8 mr-3" alt="Xhuliano Koci Logo" />
               <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Xhuliano Koci</span>
             </a>
