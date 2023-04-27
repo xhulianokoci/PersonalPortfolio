@@ -2,7 +2,7 @@ import Head from 'next/head';
 import {BsFillSunFill} from 'react-icons/bs';
 import {AiFillGithub, AiFillLinkedin, AiFillSkype,} from "react-icons/ai";
 import Image from 'next/image';
-import deved from '../public/dev-ed-wave.png';
+import deved from '../public/xk-ai.png';
 import service1 from '../public/wp-logo.png';
 import service2 from '../public/react-logo.png';
 import service3 from '../public/net-logo.png';
