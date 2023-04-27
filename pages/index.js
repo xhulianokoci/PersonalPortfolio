@@ -15,9 +15,23 @@ import web6 from '../public/web6.png';
 import logo from '../public/logo-xk.png';
 import { useState } from 'react';
 import Link from 'next/link';
+const RESUME_PDF = 'http://localhost:3000/xk-resume.pdf';
 
 export default function Home() {
+  
+  {/*Function to switch dark mode*/}
   const [darkMode, setDarkMode] = useState(false);  
+  
+  {/*Function to download PDF*/}
+  const downloadFileAtUrl = (url) =>{
+    const fileName = url.split("/").pop();
+    const aTag = document.createElement("a");
+    aTag.href = url;
+    aTag.setAttribute("download", fileName);
+    document.body.appendChild(aTag);
+    aTag.click();
+    aTag.remove();
+  }
   return (
     <div className={darkMode ? "dark" : ""}>
       <Head>
@@ -28,15 +42,17 @@ export default function Home() {
 
       <main className='bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900'>
         <section className='min-h-screen'>
+          {/*Navigation Menu*/}
           <nav className='backdrop-filter backdrop-blur-sm bg-opacity-70 py-3 px-10 mb-3 flex justify-between bg-white fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-800 dark:backdrop-filter dar:backdrop-blur-sm dark:bg-opacity-70 dark:bg-gray-900'>
           <Link href="http://localhost:3000/"><Image src={logo} width={80} height={80} alt="XK Logo"/></Link>          
             <ul className='flex items-center'>
               <li>
-                <a className=' bg-gradient-to-r from-indigo-800 via-red-500 to-yellow-500 text-white px-5 py-3 rounded-md ml-8' href='#'>Resume</a>
+                <button className=' bg-gradient-to-r from-indigo-800 via-red-500 to-yellow-500 text-white px-5 py-3 rounded-md ml-8' onClick={()=>{downloadFileAtUrl(RESUME_PDF)}}>Resume</button>
                 </li>
             </ul>
           </nav>
 
+          {/*Header Section*/}
           <div className='text-center pt-48 p-10 '>
           <h3 className='text-2xl py-2 md:text-3xl dark:text-white'>Hey, I'm</h3>
             <h2 className='text-4xl lg:text-8xl py-2 font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-800 via-red-500 to-yellow-500 '>Xhuliano Koci</h2>
@@ -44,9 +60,9 @@ export default function Home() {
             <p className='text-medium py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto dark:text-white'>Freelancer providing services for programming and design content needs. Join me down below and let's get cracking!</p>
           </div>
           <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600'>
-            <a href="https://github.com/xhulianokoci" className="flex items-center mb-4 sm:mb-0 transform transition-all hover:scale-125 hover:shadow-2xl"><AiFillGithub /> </a>
-            <a href="https://www.linkedin.com/in/xhuliano-koci/" className="flex items-center mb-4 sm:mb-0 transform transition-all hover:scale-125 hover:shadow-2xl"><AiFillLinkedin /></a>
-            <a href="https://join.skype.com/invite/eTsIUYg2Ap2g" className="flex items-center mb-4 sm:mb-0 transform transition-all hover:scale-125 hover:shadow-2xl"><AiFillSkype /></a>
+            <a href="https://github.com/xhulianokoci" className="flex items-center mb-4 sm:mb-0 transform transition-all hover:scale-125 hover:shadow-2xl" target="_blank"><AiFillGithub /> </a>
+            <a href="https://www.linkedin.com/in/xhuliano-koci/" className="flex items-center mb-4 sm:mb-0 transform transition-all hover:scale-125 hover:shadow-2xl" target="_blank"><AiFillLinkedin /></a>
+            <a href="https://join.skype.com/invite/eTsIUYg2Ap2g" className="flex items-center mb-4 sm:mb-0 transform transition-all hover:scale-125 hover:shadow-2xl" target="_blank"><AiFillSkype /></a>
           </div>
 
           <div className='relative mx-auto bg-gradient-to-b from-yellow-500 via-red-500 to-indigo-950  rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96'>
@@ -54,7 +70,7 @@ export default function Home() {
           </div>
         </section>
 
-        
+        {/*Cards Section*/}
         <section>
           <div className='text-center p-10'>
             <h3 className='text-3xl py-1  dark:font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-800 via-red-500 to-yellow-500 '>Services I Offer</h3>
@@ -97,6 +113,7 @@ export default function Home() {
           </div>
         </section>
 
+        {/*Portfolio Section*/}
         <section>
           <div className='text-center p-10'>
             <h3 className='text-3xl py-1 dark:font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-800 via-red-500 to-yellow-500'>Portofolio</h3>
@@ -119,7 +136,7 @@ export default function Home() {
           </div>
         </section>
 
-
+        {/*Contact Form Section*/}
         <section className="bg-white dark:bg-gray-900 py-10">
           <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
             <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contact Me</h2>
@@ -142,12 +159,13 @@ export default function Home() {
           </div>
         </section>
 
+        {/*DarkMode Button*/}
         <button onClick={() => setDarkMode(!darkMode)} title="Contact Sale"
         className="fixed z-90 bottom-10 right-8 backdrop-filter backdrop-blur-sm bg-opacity-80 bg-red-500 w-16 h-16 rounded-full drop-shadow-lg flex justify-center items-center text-white text-2xl hover:bg-yellow-500 hover:drop-shadow-2xl dark:backdrop-filter dark:backdrop-blur-sm dark:bg-opacity-80 "><BsFillSunFill /></button>
 
       </main>
 
-
+      {/*Footer*/}
       <footer className="bg-white dark:bg-gray-900">
         <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
           <div className="sm:flex sm:items-center sm:justify-between">
