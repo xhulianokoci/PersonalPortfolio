@@ -43,11 +43,11 @@ export default function Home() {
       <main className='bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900'>
         <section className='min-h-screen'>
           {/*Navigation Menu*/}
-          <nav className='backdrop-filter backdrop-blur-sm bg-opacity-70 py-3 px-10 mb-3 flex justify-between bg-white fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-800 dark:backdrop-filter dar:backdrop-blur-sm dark:bg-opacity-70 dark:bg-gray-900'>
+          <nav className='nav-menu'>
           <Link href="http://localhost:3000/"><Image src={logo} width={80} height={80} alt="XK Logo"/></Link>          
             <ul className='flex items-center'>
               <li>
-                <button className=' bg-gradient-to-r from-indigo-800 via-red-500 to-yellow-500 text-white px-5 py-3 rounded-md ml-8' onClick={()=>{downloadFileAtUrl(RESUME_PDF)}}>Resume</button>
+                <button className='resume-button' onClick={()=>{downloadFileAtUrl(RESUME_PDF)}}>Resume</button>
                 </li>
             </ul>
           </nav>
@@ -60,9 +60,9 @@ export default function Home() {
             <p className='text-medium py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto dark:text-white'>Freelancer providing services for programming and design content needs. Join me down below and let's get cracking!</p>
           </div>
           <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600'>
-            <a href="https://github.com/xhulianokoci" className="flex items-center mb-4 sm:mb-0 transform transition-all hover:scale-125 hover:shadow-2xl" target="_blank"><AiFillGithub /> </a>
-            <a href="https://www.linkedin.com/in/xhuliano-koci/" className="flex items-center mb-4 sm:mb-0 transform transition-all hover:scale-125 hover:shadow-2xl" target="_blank"><AiFillLinkedin /></a>
-            <a href="https://join.skype.com/invite/eTsIUYg2Ap2g" className="flex items-center mb-4 sm:mb-0 transform transition-all hover:scale-125 hover:shadow-2xl" target="_blank"><AiFillSkype /></a>
+            <a href="https://github.com/xhulianokoci" className='social-icons' target="_blank"><AiFillGithub /> </a>
+            <a href="https://www.linkedin.com/in/xhuliano-koci/" className='social-icons' target="_blank"><AiFillLinkedin /></a>
+            <a href="https://join.skype.com/invite/eTsIUYg2Ap2g" className='social-icons' target="_blank"><AiFillSkype /></a>
           </div>
 
           <div className='relative mx-auto bg-gradient-to-b from-yellow-500 via-red-500 to-indigo-950  rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96'>
@@ -73,42 +73,42 @@ export default function Home() {
         {/*Cards Section*/}
         <section>
           <div className='text-center p-10'>
-            <h3 className='text-3xl py-1  dark:font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-800 via-red-500 to-yellow-500 '>Services I Offer</h3>
-            <p className='text-medium py-5 leading-8 md:text-xl text-gray-800 max-w-6xl mx-auto dark:text-white'>
+            <h3 className='site-title'>Services I Offer</h3>
+            <p className='site-paragraph'>
               Since the beginning of my journey as a freelancer designer and developer, I've done remote work for <span className='text-red-500'>agencies </span> 
               consulted for <span className='text-red-500'>startups</span> and collaborated with talended people to create digital products for both business and customer use.
             </p>
-            <p className='text-medium py-5 leading-8 md:text-xl text-gray-800 max-w-6xl mx-auto dark:text-white'>
+            <p className='site-paragraph'>
               I offer from a wide range of services, including programming and Wordpress websites.
             </p>
           </div>
 
           <div className='lg:flex gap-10 '>
-            <div className='text-center shadow-xl p-10 rounded-xl my-10 transform transition-all hover:scale-105 hover:shadow-2xl'>
+            <div className='card'>
               <Image src={service1} width={100} height={100} className='mx-auto' alt='wordpress logo'/>
-              <h3 className='text-lg font-medium pt-8 pb-2 text-transparent bg-clip-text bg-gradient-to-r from-indigo-800 via-red-500 to-yellow-500 dark:text-white'>Wordpress Developer</h3>
+              <h3 className='card-title'>Wordpress Developer</h3>
               <p className='py-2 dark:text-white'>Creating elegant website designs suited for your needs following your design theory.</p>
-              <h4 className='py-4 text-transparent bg-clip-text bg-gradient-to-r from-indigo-800 via-red-500 to-yellow-500 '>Technologies and tools that I use</h4>
-              <p className='text-gray-800 py-1 dark:text-white'>Photoshop | Illustrator | Figma | Wordpress | Elementor</p>
-              <p className='text-gray-800 py-1 dark:text-white'>Responsive Design | Optimizaion | Basic SEO | Back-Ups | Migrations</p>
+              <h4 className='card-subheader'>Technologies and tools that I use</h4>
+              <p className='card-tech'>Photoshop | Illustrator | Figma | Wordpress | Elementor</p>
+              <p className='card-tech'>Responsive Design | Optimizaion | Basic SEO | Back-Ups | Migrations</p>
             </div>
 
-            <div className='text-center shadow-lg p-10 rounded-xl my-10 transform transition-all hover:scale-105 hover:shadow-2xl'>
+            <div className='card'>
             <Image src={service2} width={100} height={100} className='mx-auto' alt='react logo'/>
-              <h3 className='text-lg font-medium pt-8 pb-2 text-transparent bg-clip-text bg-gradient-to-r from-indigo-800 via-red-500 to-yellow-500 dark:text-white'>Front-End Developer</h3>
+              <h3 className='card-title'>Front-End Developer</h3>
               <p className='py-2 dark:text-white'>Creating elegant website designs suited for your needs following your design theory.</p>
-              <h4 className='py-4 text-transparent bg-clip-text bg-gradient-to-r from-indigo-800 via-red-500 to-yellow-500 '>Technologies that I use</h4>
-              <p className='text-gray-800 py-1 dark:text-white'>HTML5 | CSS3 | Bootstrap | Tailwind </p>
-              <p className='text-gray-800 py-1 dark:text-white'>Sass | React | NextJS | ThreeJS</p>
+              <h4 className='card-subheader'>Technologies that I use</h4>
+              <p className='card-tech'>HTML5 | CSS3 | Bootstrap | Tailwind </p>
+              <p className='card-tech'>Sass | React | NextJS | ThreeJS</p>
             </div>
 
-            <div className='text-center shadow-lg p-10 rounded-xl my-10 transform transition-all hover:scale-105 hover:shadow-2xl'>
+            <div className='card'>
               <Image src={service3} width={100} height={100} className='mx-auto' alt='dotnet logo'/>
-              <h3 className='text-lg font-medium pt-8 pb-2 text-transparent bg-clip-text bg-gradient-to-r from-indigo-800 via-red-500 to-yellow-500 dark:text-white'>Back-End Developer</h3>
+              <h3 className='card-title'>Back-End Developer</h3>
               <p className='py-2 dark:text-white'>Creating elegant website designs suited for your needs following your design theory.</p>
-              <h4 className='py-4 text-transparent bg-clip-text bg-gradient-to-r from-indigo-800 via-red-500 to-yellow-500 '>Technologies that I use</h4>
-              <p className='text-gray-800 py-1 dark:text-white'>C# | .NET | .NET Core | ASP.NET </p>
-              <p className='text-gray-800 py-1 dark:text-white'>MySQL | Hangfire | ClosedXML | SignalR </p>
+              <h4 className='card-subheader'>Technologies that I use</h4>
+              <p className='card-tech'>C# | .NET | .NET Core | ASP.NET </p>
+              <p className='card-tech'>MySQL | Hangfire | ClosedXML | SignalR </p>
             </div>
           </div>
         </section>
@@ -116,23 +116,23 @@ export default function Home() {
         {/*Portfolio Section*/}
         <section>
           <div className='text-center p-10'>
-            <h3 className='text-3xl py-1 dark:font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-800 via-red-500 to-yellow-500'>Portofolio</h3>
-            <p className='text-medium py-5 leading-8 md:text-xl text-gray-800 max-w-6xl mx-auto dark:text-white'>
+            <h3 className='site-title'>Portofolio</h3>
+            <p className='site-paragraph'>
               Since the beginning of my journey as a freelancer designer and developer, I've done remote work for <span className='text-teal-500'>agencies </span> 
               consulted for <span className='text-teal-500'>startups</span> and collaborated with talended people to create digital products for both business and customer use.
             </p>
-            <p className='text-medium py-5 leading-8 md:text-xl text-gray-800 max-w-6xl mx-auto dark:text-white'>
+            <p className='site-paragraph'>
               I offer from a wide range of services, including programming and Wordpress websites.
             </p>
           </div>
 
           <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
-            <div className='basis-1/3 flex-1 transform transition-all hover:scale-105'><Image src={web1} className='rounded-lg object-cover' width={'100%'} height={'100%'} alt='portfolio image'/></div>
-            <div className='basis-1/3 flex-1 transform transition-all hover:scale-105'><Image src={web2} className='rounded-lg object-cover' width={'100%'} height={'100%'} alt='portfolio image'/></div>
-            <div className='basis-1/3 flex-1 transform transition-all hover:scale-105'><Image src={web3} className='rounded-lg object-cover' width={'100%'} height={'100%'} alt='portfolio image'/></div>
-            <div className='basis-1/3 flex-1 transform transition-all hover:scale-105'><Image src={web4} className='rounded-lg object-cover' width={'100%'} height={'100%'} alt='portfolio image'/></div>
-            <div className='basis-1/3 flex-1 transform transition-all hover:scale-105'><Image src={web5} className='rounded-lg object-cover' width={'100%'} height={'100%'} alt='portfolio image'/></div>
-            <div className='basis-1/3 flex-1 transform transition-all hover:scale-105'><Image src={web6} className='rounded-lg object-cover' width={'100%'} height={'100%'} alt='portfolio image'/></div>
+            <div className='portfolio-images'><Image src={web1} className='image' width={'100%'} height={'100%'} alt='portfolio image'/></div>
+            <div className='portfolio-images'><Image src={web2} className='image' width={'100%'} height={'100%'} alt='portfolio image'/></div>
+            <div className='portfolio-images'><Image src={web3} className='image' width={'100%'} height={'100%'} alt='portfolio image'/></div>
+            <div className='portfolio-images'><Image src={web4} className='image' width={'100%'} height={'100%'} alt='portfolio image'/></div>
+            <div className='portfolio-images'><Image src={web5} className='image' width={'100%'} height={'100%'} alt='portfolio image'/></div>
+            <div className='portfolio-images'><Image src={web6} className='image' width={'100%'} height={'100%'} alt='portfolio image'/></div>
           </div>
         </section>
 
